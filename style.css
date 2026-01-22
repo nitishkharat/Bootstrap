@@ -1,53 +1,51 @@
-/* ===== Transflower Theme ===== */
-body {
-  font-family: "Poppins", sans-serif;
-}
 
-/* Override Bootstrap colors */
 :root {
-  --bs-primary: #e91e63;       /* blossom pink */
-  --bs-secondary: #4caf50;     /* leaf green */
-  --bs-warning: #ffeb3b;       /* sunshine yellow */
+  --bs-primary: rgb(206, 206, 206);
+  --bs-secondary: #00ff33;
+  --bs-warning: #ffeb3b;
+
 }
 
-/* Navbar tweak */
 .navbar {
   background-color: var(--bs-primary) !important;
-}
-.navbar .nav-link {
-  color: #fff !important;
-  font-weight: 500;
-}
-.navbar .nav-link:hover {
-  color: var(--bs-warning) !important;
+  color: #4caf50;
 }
 
-/* Buttons */
+.navbar .nav-link {
+  color: #474747;
+  font-weight: 400;
+  font-weight: bold;
+}
+
+.navbar .nav-link:hover {
+  color: rgb(0, 0, 0);
+    transform: scale(1.03);
+  transition: 0.3s ease-in-out;
+}
+
 .btn-primary {
   background-color: var(--bs-primary);
-  border-color: var(--bs-primary);
+  border-color: var(--bs-secondary);
 }
+
 .btn-primary:hover {
   background-color: #c2185b;
   border-color: #c2185b;
+  transform: scale(1.03);
+  transition: 0.3s ease-in-out;
 }
 
-/* Cards */
+
 .card {
   border: none;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  
-}
 
-/* Footer */
-footer {
-  background-color: var(--bs-secondary);
 }
 
 .carousel-caption h5,
 .carousel-caption p {
-  background-color: rgba(233, 30, 99, 0.6); /* translucent pink */
+  background-color: rgba(233, 30, 99, 0.6);
   padding: 10px;
   border-radius: 8px;
 }
@@ -55,14 +53,15 @@ footer {
 .card:hover {
   transform: scale(1.03);
   transition: 0.3s ease-in-out;
-}
+} 
+
 .btn-outline-primary:hover {
   background-color: var(--bs-primary);
   color: #fff;
   border-color: var(--bs-primary);
 }
 
-section {
+.section {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -70,4 +69,139 @@ section {
 .nav-link.active {
   color: var(--bs-warning) !important;
   font-weight: 600;
+}
+
+.product-img {
+  width: 100%;
+  height: 200px;
+}
+
+.form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modal-content {
+  border-radius: 12px;
+}
+
+.btn-primary {
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+  background-color: #c2185b;
+}
+
+.card {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-brand i {
+  animation: bloom 2s ease-in-out infinite alternate;
+}
+
+@keyframes bloom {
+  0% {
+    transform: scale(1);
+    color: #fff;
+  }
+
+  100% {
+    transform: scale(1.2);
+    color: #ffeb3b;
+  }
+}
+
+.accordion-button:focus {
+  box-shadow: 0 0 0 0.25rem rgba(233, 30, 99, 0.25);
+}
+
+.nav-tabs .nav-link.active {
+  background-color: #e91e63;
+  color: #fff;
+}
+
+.tab-content {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+.body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.h1,
+h2 {
+  font-weight: bold;
+}
+
+.card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.popup-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.popup-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 20px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  transition: 0.3s ease-in-out;
+}
+
+footer {
+  font-size: 0.9rem;
 }

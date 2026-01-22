@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    
+  
 </head>
 <body>
     <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: var(--bs-primary);">
-  <div class="container">
-    <a class="navbar-brand fw-bold" href="index.html">🌼 Transflower</a>
-    
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">🌼 Transflower</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
@@ -44,7 +44,44 @@
             <label class="form-label">Message</label>
             <textarea class="form-control" rows="4" placeholder="Write your message"></textarea>
           </div>
-          <button class="btn btn-primary w-100">Send Message</button>
+          <button class="btn btn-secondary w-100">Send Message</button>
+
+          <section class="container my-5">
+  
+  
+            <h2>Contact Us</h2>
+  <form id="contactForm" class="mt-4 needs-validation" novalidate>
+    <div class="mb-3">
+      <label for="name" class="form-label">Full Name</label>
+      <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+      <div class="invalid-feedback">Please enter your name.</div>
+    </div>
+
+    <div class="mb-3">
+      <label for="email" class="form-label">Email</label>
+      <input type="email" id="email" class="form-control" placeholder="you@example.com" required>
+      <div class="invalid-feedback">Please enter a valid email.</div>
+    </div>
+
+    <div class="mb-3">
+      <label for="message" class="form-label">Message</label>
+      <textarea id="message" class="form-control" rows="4" required></textarea>
+      <div class="invalid-feedback">Message cannot be empty.</div>
+    </div>
+
+   <button type="submit" class="btn btn-primary w-100">
+  <i class="bi bi-send-fill"></i> Send Message
+</button>
+  
+
+
+
+
+
+
+        <footer class="text-center text-white py-3">
+  <p class="mb-0">&copy; 2025 Transflower Store. All Rights Reserved.</p>
+</footer>
         </form>
       </div>
     </div>
